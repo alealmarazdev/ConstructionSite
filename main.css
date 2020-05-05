@@ -1,0 +1,118 @@
+  body {
+    font-family: 'Noto Sans', sans-serif;
+    color:#616161;
+    background-color:#eeeeee;
+   }
+  .container {
+    margin: auto;
+    max-width: 1024px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position:relative;
+  }
+  .box {
+    width: auto ;
+    height: 500px;
+    background: #fff;
+    margin-top:50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-radius:5px;
+    box-shadow: 6px 18px 18px rgba(0, 0, 0, 0.08), -6px 18px 18px rgba(0, 0, 0, 0.08);
+  }
+  .animation{
+    margin-top:7.5%;
+    display:inline-block;
+    margin-bottom:2.5%;
+  }
+  h1{
+    font-size:32px;
+    font-weight:400;
+    text-transform:uppercase;
+    margin:0;
+    color:#eb5a49; 
+    display: flex; 
+    justify-content: center; 
+    padding-top: 30px;
+  }
+  hr{
+    border: 4px solid;   
+    border-image: linear-gradient(90deg, rgb(11,54,86, 1) 0, rgb(37,117,225, 1)) .75;
+    position: relative; 
+    top: -10px;
+  }
+  p{
+    font-size:16px;
+    font-weight:700;
+    margin:0;
+  }
+  a{
+    color: #f6921e;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left:5px;
+  }
+  div.img-container{
+    width:30%; margin-right: auto; margin-left:auto
+  }
+  img{
+    width: 100%;
+  }
+  .one, .two, .three {
+    display:block;
+    float:left;
+  }
+  .one {
+    background: url('./img/engranenegrocopycopy.svg');
+    width:90px;
+    height:90px;
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+    margin-top:-10px;
+    margin-right:8px;
+  }
+  .two {
+    background: url('./img/engranenegro.svg');
+    width:120px;
+    height:120px;
+    background-size:100% ;
+   
+  }
+  .three {
+    background: url('./img/engranenegrocopy.svg');
+    width:80px;
+    height:80px;
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+    margin-top:-50px;
+    margin-left:-10px;
+  }
+  @keyframes spin-one {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(-359deg) ;
+      transform: rotate(-359deg) ;
+    }
+  }
+  .spin-one {
+    -webkit-animation: spin-one 1.5s infinite linear;
+    animation: spin-one 1.5s infinite linear;
+  }
+  @keyframes spin-two {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(-359deg);
+      transform: rotate(359deg);
+    }
+  }
+  .spin-two {
+    -webkit-animation: spin-two 2s infinite linear;
+    animation: spin-two 2s infinite linear;
+  }
